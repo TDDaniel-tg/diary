@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Для работы с абсолютным позиционированием */
+}
+
+.register-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.register-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%; /* Устанавливаем одинаковую ширину для всех полей */
+    box-sizing: border-box; /* Чтобы padding не выходил за пределы */
+}
+
+textarea {
+    resize: vertical;
+    height: 40px; /* Устанавливаем одинаковую высоту для textarea */
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.main-button {
+    width: 100%; /* Устанавливаем кнопку на всю ширину формы */
+    margin-top: 10px;
+}
+
+select {
+    appearance: none; /* Убираем стандартный вид выпадающего списка */
+    background-color: #fff;
+    cursor: pointer;
+}

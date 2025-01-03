@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b4b4b4;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.schedule-container {
+    width: 500px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.arrow {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.arrow:hover {
+    background-color: #0073e6;
+    transform: scale(1.1);
+}
+
+#schedule {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.schedule-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-item h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #ccc;
+}
+
+.schedule-item p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+.back-button {
+    
+    margin-top: 5px;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1e90ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+    
+}

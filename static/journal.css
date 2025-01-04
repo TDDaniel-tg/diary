@@ -1,3 +1,10 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +31,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    
 }
 
 .header h1 {
@@ -60,6 +66,7 @@ body {
     background-color: #292929;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .schedule-item h2 {
@@ -74,8 +81,79 @@ body {
     color: #fff;
 }
 
+/* Стили для модального окна */
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Модальное окно с классом "open" для показа */
+.modal.open {
+    display: block;
+    opacity: 1;
+}
+
+/* Контейнер для содержимого модального окна */
+.modal-content {
+    background-color: #292929;
+    padding: 20px;
+    margin: 15% auto;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+/* При открытии модального окна */
+.modal.open .modal-content {
+    transform: scale(1);
+}
+
+/* Кнопка закрытия */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #ff0000;
+}
+
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Кнопка для возврата на главную */
 .back-button {
-    
     margin-top: 5px;
     display: inline-block;
     padding: 8px 16px;
@@ -91,5 +169,4 @@ body {
 .back-button:hover {
     background-color: #0073e6;
     transform: scale(1.05);
-    
 }

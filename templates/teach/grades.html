@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица успеваемости студентов</title>
+    <link rel="stylesheet" href="/static/grades.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header1">
+            <h1>Таблица успеваемости студентов</h1>
+            <a href="/templates/teach/index.html" class="back-button">Вернуться на главную</a>
+            
+        </div>
+       
+        <table id="scores-table">
+            <thead>
+                <tr>
+                    <th>Предмет</th>
+                    <th>Оценки</th>
+                    <th>Среднее</th>
+                    <th>Сумма</th>
+                    <th>Исправление</th>
+                    <th>Заметки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Строки будут динамически добавлены через JavaScript -->
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="/static/grades.js"></script>
+</body>
+</html>
